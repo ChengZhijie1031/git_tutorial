@@ -26,7 +26,29 @@
 
 ## 管理历史记录
 
+1. 使用`git status`命令查看仓库状态
 
+   ```powershell
+   $ git status
+   On branch master
+   Changes not staged for commit:
+     (use "git add <file>..." to update what will be committed)
+     (use "git restore <file>..." to discard changes in working directory)
+           modified:   tutorial.md
+   
+   no changes added to commit (use "git add" and/or "git commit -a")
+   
+   ```
+
+   表示文件`tutorial.md`被修改过了，但是还没有准备提交的修改
+
+2. 使用`git diff`查看更改的内容
+
+3. 继续使用`git add`和`git commit`命令提交修改后的文件
+
+
+
+## 版本回退
 
 
 
@@ -37,4 +59,3 @@
 
 
 [廖雪峰教程]: https://www.liaoxuefeng.com/wiki/896043488029600
-[https://www.liaoxuefeng.com/wiki/896043488029600]: 
