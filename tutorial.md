@@ -76,6 +76,8 @@
 
    commit版本号十六进制，在git GUI里面也可以查看提交历史的时间线
 
+   
+
 2. 版本切换
 
    用`HEAD`表示当前版本，`HEAD^`表示上一个版本，`HEAD^^`表示上上个版本，`HEAD~100`表示往上100个版本
@@ -111,7 +113,19 @@
    
    
 
-3. 
+3. 理解stage和master的概念
+
+   
+
+   ![alt git add](https://www.liaoxuefeng.com/files/attachments/919020074026336/0)
+
+   
+
+   ![alt git commit](https://www.liaoxuefeng.com/files/attachments/919020100829536/0)
+
+
+
+​		git管理的是修改而不是文件，每次修改后，需要先`git add`到暂存区stage，然后`git commit`提交到版本库
 
 
 
