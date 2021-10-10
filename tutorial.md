@@ -50,7 +50,41 @@
 
 ## 版本回退
 
+1. 使用`git log`查看历史版本日志记录
 
+   ```powershell
+   $ git log
+   commit 20529966e29b0b4ba21ab31f2478601879b1626d (HEAD -> master)
+   Author: Cheng Zhijie <jackczj1997@qq.com>
+   Date:   Fri Oct 8 23:37:52 2021 +0800
+   
+       update the Chpanter3
+   
+   commit a88308d7c01dcd4bd963a30b065bb964f301558d
+   Author: Cheng Zhijie <jackczj1997@qq.com>
+   Date:   Fri Oct 8 23:34:57 2021 +0800
+   
+       update the Chpanter2
+   
+   commit 3a950d8cdaa6eb1918da68478079cf087970b605
+   Author: Cheng Zhijie <jackczj1997@qq.com>
+   Date:   Fri Oct 8 22:43:01 2021 +0800
+   
+       update git tutorial
+   
+   ```
+
+   commit版本号十六进制，在git GUI里面也可以查看提交历史的时间线
+
+2. 版本切换
+
+   用`HEAD`表示当前版本，`HEAD^`表示上一个版本，`HEAD^^`表示上上个版本，`HEAD~100`表示往上100个版本
+
+   `git reset`命令回退到指定版本
+
+   `git reset --hard HEAD^`回到上个版本
+
+   
 
 
 
