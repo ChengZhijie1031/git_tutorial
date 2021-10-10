@@ -129,6 +129,32 @@
 
 
 
+4. `git checkout -- <file>`命令用来撤销文件在工作区的修改
+
+   在`git add`后，`git commit`前，使用`git reset HEAD <file>`撤销暂存区的修改，重新放回工作区
+
+   
+
+   删除也是一种修改操作：
+
+   普通的`rm`删除命令直接删除文件，使用`git rm <file>`命令删除版本库的文件，使用`git checkout -- <file>`即可恢复删除文件
+
+
+
+## 远程仓库
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
