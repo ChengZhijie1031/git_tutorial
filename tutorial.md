@@ -1,4 +1,4 @@
-# git学习
+# git学习教程
 
 使用的是[廖雪峰][廖雪峰教程]的git教程
 
@@ -142,6 +142,34 @@
 
 
 ## 远程仓库
+
+1. 添加GitHub的SSH Key
+
+   在GitHub账户设置里添加SSH Key
+
+   
+
+2. 在GitHub创建新的Repository
+
+   在本地仓库目录下运行命令`git remote add origin git@github.com:<GitHub Account Name>/<GitHub Repository Name>.git`
+
+   使用`git push -u origin master`命令推送到远程库
+
+   
+
+3. `git push origin master`把本地`master`分支的最新修改推送至GitHub
+
+
+
+4. 从远处库clone到本地
+
+   如果从零开发新项目，应该先创建远程库，再从远程库clone到本地
+
+   `git clone git@github.com:<GitHub Account Name>/<GitHub Repository Name>.git`
+
+
+
+
 
 
 
