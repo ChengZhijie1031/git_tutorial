@@ -169,7 +169,42 @@
 
 
 
+## 分支管理 Branches
 
+1. 创建与合并分支
+
+   如下图所示，分支`dev`是`master`外的另一个分支，将`HEAD`指向`dev`分支，对工作区的修改和提交就是针对`dev`分支
+
+   
+
+   ![alt branches](https://www.liaoxuefeng.com/files/attachments/919022387118368/l)
+
+   合并就是把`master`指向`dev`的当前提交
+
+   
+
+   ![alt](https://www.liaoxuefeng.com/files/attachments/919022412005504/0)
+
+   创建`dev`分支并且切换
+   
+   ```powershell
+   $ git checkout -b dev
+   Switched to a new branch 'dev'
+   
+   ```
+   
+   这里`-b`参数表示创建并且切换，相当于以下两条命令：
+   
+   ```powershell
+   $ git branch dev
+   $ git checkout dev
+   ```
+   
+   `git branch`查看当前分支
+   
+   
+   
+   
 
 
 
