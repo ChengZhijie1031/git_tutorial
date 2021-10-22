@@ -210,9 +210,43 @@
 
    
 
-2. 
+2. 多人协作推送分支的工作模式
+
+   先利用`git push`推送
+
+   如果失败则需要用`git pull`进行合并
+
+   合并有冲突则解决冲突，并且在本地提交
+
+   最后`git push`提交
 
 
+
+## 标签管理tags
+
+1. 创建标签（全都储存在本地）
+
+​		先切换到需要打标签的分支上，使用`git tag v1.0`打上v1.0的标签
+
+​		使用`git tag`查看所有标签，使用`git show <tagname>`查看标签信息
+
+​		使用`git tag <tagname> <commit id>`对指定的某次历史提交打标签
+
+​		使用`git tag -a <tagname> -m "message"`指定标签信息
+
+
+
+2. 操作标签
+
+   `git tag -d <tagname>`删除标签
+
+   推送标签到远程使用`git push origin <tagname>`
+
+   推送所有未推送的本地标签`git push origin --tags`
+
+   远程删除标签需要先删除本地标签，再远程删除`git push origin :ref/tags/<tagname>`
+
+   
 
 
 
