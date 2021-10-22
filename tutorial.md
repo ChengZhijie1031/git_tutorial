@@ -246,6 +246,46 @@
 
    远程删除标签需要先删除本地标签，再远程删除`git push origin :ref/tags/<tagname>`
 
+
+
+## 自定义git
+
+1. 忽略特殊文件
+
+   通过创建`.gitignore`文件完成
+
+2. 搭建git服务器
+
+   linux下，Ubuntu或者Debian系统
+
+   第一步，安装git，`sudo apt-get install git`
+
+   第二步，创建`git`用户，`sudo adduser git`
+
+   第三步，创建证书，将用户的公钥`id_rsa.pub`导入`/home/git/.ssh/authorized_keys`文件，一行一个
+
+   第四步，初始化仓库，选一个git目录`/srv/sample.git`
+
+   输入命令`sudo git init --bare sample.git`创建一个裸仓库，没有工作区
+
+   把owner改为`git`：`sudo chown -R git:git sample.git`
+
+   第五步，禁用shell登录，出于安全考虑，不允许git用户登录shell，编辑`/etc/passwd`文件完成
+
+   把这一行
+
+   `git:x:1001:1001:,,,:/home/git:/bin/bash`
+
+   改成
+
+   `git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell`
+
+   第六步，克隆远程仓库
+
+   使用`git clone`
+
+   `git clone git@server:/srv/sample.git`
+
    
 
 
