@@ -186,25 +186,35 @@
    ![alt](https://www.liaoxuefeng.com/files/attachments/919022412005504/0)
 
    创建`dev`分支并且切换
-   
+
    ```powershell
-   $ git checkout -b dev
+   $ git switch -c dev
    Switched to a new branch 'dev'
    
    ```
-   
-   这里`-b`参数表示创建并且切换，相当于以下两条命令：
-   
+
+   这里`-c`参数表示创建并且切换，相当于以下两条命令：
+
    ```powershell
    $ git branch dev
-   $ git checkout dev
+   $ git switch dev
    ```
-   
+
    `git branch`查看当前分支
+
+   这里就可以在新分支上直接修改提交
+
+   合并分支`git merge dev`
+
+   删除分支`git branch -d dev`
+
    
-   
-   
-   
+
+2. 
+
+
+
+
 
 
 
